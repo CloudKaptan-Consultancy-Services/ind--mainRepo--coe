@@ -1,0 +1,38 @@
+# Define a workflow to execute deployment upon merge into specific branches
+name: Auto Deployment
+
+# Trigger the workflow on merge events into specific branches
+on:
+  push:
+    branches:
+      - "predemo"
+      - "demo"
+
+jobs:
+  # Job to deploy components to the QA environment
+  qa-promote:
+    if: ${{ github.event_name == 'push' && github.ref_name == 'predemo' }}
+    name: predemo
+    # Utilizing the dynamic yml file for reusability
+    uses: ./.github/workflows/deployment-workflow.yml
+    with:
+      WORKFLOW_TYPE: DEPLOYMENT
+      AUTH_ORG_ALIAS: predemo
+    secrets:
+      SECRET_URL_PATH: ${{ secrets.COE_PREDEMO_ORG_AUTH_URL}}
+      DOCKER_HUB_UN: ${{ secrets.DOCKER_HUB_USERNAME }}
+      DOCKER_HUB_PW: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+  # Job to deploy components to the UAT environment
+  uat-promote:
+    if: ${{ github.event_name == 'push' && github.ref_name == 'demo' }}
+    name: demo
+    # Utilizing the dynamic yml file for reusability
+    uses: ./.github/workflows/deployment-workflow.yml
+    with:
+      WORKFLOW_TYPE: DEPLOYMENT
+      AUTH_ORG_ALIAS: demo
+    secrets:
+      SECRET_URL_PATH: ${{ secrets.COE_DEMO_ORG_AUTH_URL}}
+      DOCKER_HUB_UN: ${{ secrets.DOCKER_HUB_USERNAME }}
+      DOCKER_HUB_PW: ${{ secrets.DOCKER_HUB_PASSWORD }}
