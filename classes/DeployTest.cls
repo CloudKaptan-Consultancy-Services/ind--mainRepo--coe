@@ -1,4 +1,4 @@
-//Sample Test Class
+//Sample test class
 @isTest
 private class DeployTest{
     static testMethod void deployMethod() {
