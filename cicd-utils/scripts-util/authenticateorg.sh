@@ -10,9 +10,12 @@ loginToSalesforceOrg() {
     echo "|                         Authenticate with Salesforce org [$AUTH_ORG_ALIAS]                               |"
     echo "------------------------------------------------------------------------------------------------------------"
 
+<<<<<<< Updated upstream
     npm update --global sfdx-cli
 
     sfdx plugins:install sfdmu
+=======
+>>>>>>> Stashed changes
 
     local sfdxUrlFile="./CI_SFDX_URL.txt"
     echo "${SECRET_URL_PATH}" > "$sfdxUrlFile"

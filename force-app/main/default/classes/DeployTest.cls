@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 //Sample Test Class
+=======
+//Sample Test class
+>>>>>>> Stashed changes
 @isTest
 private class DeployTest{
     static testMethod void deployMethod() {
