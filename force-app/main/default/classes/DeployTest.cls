@@ -1,3 +1,4 @@
+//Sample Test Class
 @isTest
 private class DeployTest{
     static testMethod void deployMethod() {
