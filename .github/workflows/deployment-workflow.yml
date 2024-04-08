@@ -1,6 +1,8 @@
 # This GitHub Actions workflow facilitates the execution of deployments upon merging into environment-specific branches.
 name: deployment-workflow
 
+sfdx plugins:install sfdmu
+
 on:
   # This workflow contains a single job called "pr-validation"
   workflow_call:
@@ -73,14 +75,14 @@ jobs:
         run: chmod +x ./cicd-utils/scripts-util/validateComponents.sh && ./cicd-utils/scripts-util/validateComponents.sh
         shell: bash
 
-      # Quick deploy if validation is success
-      - name: Quick Deploy
-        run: chmod +x ./cicd-utils/scripts-util/quickdeploy.sh && ./cicd-utils/scripts-util/quickdeploy.sh
-        shell: bash
-
       # Metadata Components Deploy
       - name: SFDMU Data Deploy
         run: chmod +x ./cicd-utils/scripts-util/sfdmu.sh && ./cicd-utils/scripts-util/sfdmu.sh
+        shell: bash
+
+      # Quick deploy if validation is success
+      - name: Quick Deploy
+        run: chmod +x ./cicd-utils/scripts-util/quickdeploy.sh && ./cicd-utils/scripts-util/quickdeploy.sh
         shell: bash
 
       # Skuid Pages Deploy
