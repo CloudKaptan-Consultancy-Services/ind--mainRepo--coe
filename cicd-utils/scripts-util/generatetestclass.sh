@@ -8,6 +8,11 @@
 
 # Define testClassList globally
 declare -a testClassList=()
+<<<<<<< Updated upstream
+=======
+# Define an associative array to store class names and their corresponding test class names
+local -A classNamesTestClassesTable
+>>>>>>> Stashed changes
 
 # Function to initialize the safe directory configuration for Git and fetch origin.
 fetchOrigin() {
@@ -110,9 +115,12 @@ getChangedApexClassesAndTestClasses() {
     local allTestClassesFilePath="cicd-utils/testclass-util/allTestClasses.txt"
     local SPECIFIED_APEX_CLASSES=""
 
+<<<<<<< Updated upstream
     # Define an associative array to store class names and their corresponding test class names
     local -A classNamesTestClassesTable
 
+=======
+>>>>>>> Stashed changes
     # Get base branch
     local baseBranch="$(defineBaseBranch)"
 
