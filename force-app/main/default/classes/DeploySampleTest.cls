@@ -1,7 +1,8 @@
 //Sample Test Class
 @isTest
 private class DeploySampleTest{
-    static testMethod void deployCheck() {
+    @isTest
+    static void deployCheck() {
     
         Account acc = new Account();
         acc.Name = 'TestName';
