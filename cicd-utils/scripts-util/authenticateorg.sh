@@ -10,7 +10,6 @@ loginToSalesforceOrg() {
     echo "|                         Authenticate with Salesforce org [$AUTH_ORG_ALIAS]                               |"
     echo "------------------------------------------------------------------------------------------------------------"
 
-
     local sfdxUrlFile="./CI_SFDX_URL.txt"
     echo "${SECRET_URL_PATH}" > "$sfdxUrlFile"
     sf org login sfdx-url --sfdx-url-file "$sfdxUrlFile" --set-default --alias "${AUTH_ORG_ALIAS}"
