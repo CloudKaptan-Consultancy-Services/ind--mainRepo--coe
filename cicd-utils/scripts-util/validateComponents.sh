@@ -18,6 +18,13 @@ performDeltaCheckOnlyDeployment() {
     # Checking if any metadata changes are in package.xml
     if grep -q '<types>' $packageXmlFilePath; then
         # Initiating async deployment.
+        if grep -q '<name>ApexClass</name>' $packageXmlFilePath; then
+            # Initiating async deployment with RunSpecifiedTests.
+            sf project deploy start -o $AUTH_ORG_ALIAS -x $packageXmlFilePath -l RunSpecifiedTests -t $(cat $runTestClassesFilePath) --verbose --dry-run --async | tee $deployOrgFilePath
+        else
+            # Initiating async deployment without specifying test classes.
+            sf project deploy start -o $AUTH_ORG_ALIAS -x $packageXmlFilePath --verbose --dry-run --async | tee $deployOrgFilePath
+        fi
         
         # Fetching Deploy Id from the output.
         VALIDATION_OUTPUT=$(cat $deployOrgFilePath) 

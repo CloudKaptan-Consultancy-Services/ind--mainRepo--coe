@@ -8,6 +8,8 @@
 
 # Define testClassList globally
 declare -a testClassList=()
+# Define an associative array to store class names and their corresponding test class names
+local -A classNamesTestClassesTable
 
 # Function to initialize the safe directory configuration for Git and fetch origin.
 fetchOrigin() {
