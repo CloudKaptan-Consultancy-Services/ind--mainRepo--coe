@@ -1,8 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>TestApexGit</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Account.Git__c</members>
+        <members>Account.Github__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>testgitv1</members>
+        <name>Flow</name>
     </types>
     <version>59.0</version>
 </Package>
