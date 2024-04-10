@@ -11,8 +11,11 @@ private class DeploySampleTest{
         
         insert acc;
         
-        DeploySample obj = new DeploySample();
+        DeploySampleController obj = new DeploySampleController();
         obj.deployMethod();
+
+        List<Account> accList = [Select id,name from Account limit 1];
+        System.assertEquals('TestName', accList[0].Name, 'Name Does Not Match');
         
         Test.stopTest();
         
