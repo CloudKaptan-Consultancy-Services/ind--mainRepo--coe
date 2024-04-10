@@ -1,1 +1,1 @@
-Deploy,DeployTest
+DeploySample,DeploySampleTest
