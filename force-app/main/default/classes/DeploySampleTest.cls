@@ -1,4 +1,4 @@
-//Sample Test Class
+//Sample Test Class for CI/CD
 @isTest
 private class DeploySampleTest{
     @isTest

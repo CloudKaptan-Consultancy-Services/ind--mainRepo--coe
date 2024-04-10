@@ -1,5 +1,5 @@
 /**
- * @description Sample Class
+ * @description Sample Class for CiCd
  */
 public with sharing Class DeploySampleController{
     /**
