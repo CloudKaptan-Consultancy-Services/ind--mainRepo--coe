@@ -7,7 +7,7 @@ public class TestApexGit {
          for(account acc:accList)
          {
              acc.Git__c=true;
-             acc.Github__c=true;
+             acc.Github__c=false;
              updateAccountRecord.add(acc);
          }
          update updateAccountRecord;
