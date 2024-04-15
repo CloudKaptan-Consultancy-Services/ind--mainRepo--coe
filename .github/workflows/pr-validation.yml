@@ -6,8 +6,8 @@ on:
   # Trigger the PR validation on pull request with master branch
   pull_request:
     branches:
-      - "predemo"
-      - "demo"
+      - "uat"
+      - "preprod"
 jobs:
   # Validate the Commit against Ci Org to ensure nothing is conflicting.
   build:
