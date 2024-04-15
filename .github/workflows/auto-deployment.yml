@@ -5,19 +5,19 @@ name: Auto Deployment
 on:
   push:
     branches:
-      - "predemo"
-      - "demo"
+      - "uat"
+      - "preprod"
 
 jobs:
   # Job to deploy components to the QA environment
   qa-promote:
-    if: ${{ github.event_name == 'push' && github.ref_name == 'predemo' }}
-    name: predemo
+    if: ${{ github.event_name == 'push' && github.ref_name == 'uat' }}
+    name: uat
     # Utilizing the dynamic yml file for reusability
     uses: ./.github/workflows/deployment-workflow.yml
     with:
       WORKFLOW_TYPE: DEPLOYMENT
-      AUTH_ORG_ALIAS: predemo
+      AUTH_ORG_ALIAS: uat
     secrets:
       SECRET_URL_PATH: ${{ secrets.COE_PREDEMO_ORG_AUTH_URL}}
       DOCKER_HUB_UN: ${{ secrets.DOCKER_HUB_USERNAME }}
@@ -25,13 +25,13 @@ jobs:
 
   # Job to deploy components to the UAT environment
   uat-promote:
-    if: ${{ github.event_name == 'push' && github.ref_name == 'demo' }}
-    name: demo
+    if: ${{ github.event_name == 'push' && github.ref_name == 'preprod' }}
+    name: preprod
     # Utilizing the dynamic yml file for reusability
     uses: ./.github/workflows/deployment-workflow.yml
     with:
       WORKFLOW_TYPE: DEPLOYMENT
-      AUTH_ORG_ALIAS: demo
+      AUTH_ORG_ALIAS: preprod
     secrets:
       SECRET_URL_PATH: ${{ secrets.COE_DEMO_ORG_AUTH_URL}}
       DOCKER_HUB_UN: ${{ secrets.DOCKER_HUB_USERNAME }}
