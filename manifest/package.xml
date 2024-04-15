@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>DeploySampleController</members>
+        <members>DeploySampleTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Account.External_ID__c</members>
+        <members>Contact.External_Id__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
     <version>59.0</version>
 </Package>
