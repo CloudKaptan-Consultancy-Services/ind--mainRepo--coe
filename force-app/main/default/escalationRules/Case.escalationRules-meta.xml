@@ -16,8 +16,6 @@
                 <assignedToType>Queue</assignedToType>
                 <minutesToEscalation>120</minutesToEscalation>
                 <notifyCaseOwner>false</notifyCaseOwner>
-                <notifyTo>arnab@cloudkaptan.com</notifyTo>
-                <notifyToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
         </ruleEntry>
