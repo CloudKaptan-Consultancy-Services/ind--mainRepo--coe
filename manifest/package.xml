@@ -59,10 +59,6 @@
         <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
-        <types>
-        <members>LeadConversionBatch</members>
-        <name>ApexClass</name>
-    </types>
     <types>
         <members>Admin</members>
         <name>Profile</name>
