@@ -169,8 +169,6 @@
                 <componentInstanceProperties>
                     <name>title</name>
                 </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityRecommendedConnections</componentName>
-                <identifier>runtime_sales_activities_activityRecommendedConnections</identifier>
             </componentInstance>
         </itemInstances>
         <name>relatedListTabContent</name>

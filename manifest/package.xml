@@ -10,6 +10,7 @@
         <members>Lead.Interested__c</members>
         <members>Lead.Lead_Id__c</members>
         <members>Account.Lead_Id__c</members>
+        <members>Lead.External_Id__c </members>
         <members>Account.External_Id__c</members>
         <members>Contact.External_Id__c</members>
         <name>CustomField</name>
@@ -49,6 +50,10 @@
         <members>DeploySampleController</members>
         <members>DeploySampleTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Lead.Type 1</members>
+        <name>BusinessProcess</name>
     </types>
     <types>
         <members>unfiled$public</members>

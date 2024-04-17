@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Investor</fullName>
     <active>true</active>
+    <businessProcess>Type 1</businessProcess>
     <compactLayoutAssignment>Leads_Custom_Compact_Layout</compactLayoutAssignment>
     <label>Investor</label>
     <picklistValues>
