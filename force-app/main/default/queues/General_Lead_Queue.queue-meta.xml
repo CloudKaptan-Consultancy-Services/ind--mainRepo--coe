@@ -7,7 +7,6 @@
             <user>coe@cloudkaptan.com</user>
         </users>
     </queueMembers>
-    <queueRoutingConfig>BuyerAssistantRoutingConfig</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>
