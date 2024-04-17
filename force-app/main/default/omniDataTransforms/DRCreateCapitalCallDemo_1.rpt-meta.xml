@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;SetValues2&quot; : null,
+    &quot;FetchFinancialAccount&quot; : null,
+    &quot;SetValues1&quot; : null,
+    &quot;Step1&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;Step1&quot; : {
+    &quot;Checkbox1&quot; : null,
+    &quot;Amount&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRCreateCapitalCallDemo</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRCreateCapitalCallDemoCustom0jIO10000000C2nMAEItem2</globalKey>
+        <inputFieldName>Step1:Amount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__Amount__c</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRCreateCapitalCallDemoCustom0jIO10000000C2nMAEItem1</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__FinancialAccount__c</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRCreateCapitalCallDemoCustom0jIO10000000C2nMAEItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Credit</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRCreateCapitalCallDemoCustom3405</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__TransactionType__c</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRCreateCapitalCallDemoCustom0jIO10000000C2nMAEItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>FinServ__TransactionStatus__c</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRCreateCapitalCallDemoCustom0jIO10000000C2nMAEItem3</globalKey>
+        <inputFieldName>timeStamp</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateCapitalCallDemo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FinServ__TransactionDate__c</outputFieldName>
+        <outputObjectName>FinServ__FinancialAccountTransaction__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;SetValues2&quot; : null,
+    &quot;FetchFinancialAccount&quot; : null,
+    &quot;SetValues1&quot; : null,
+    &quot;Step1&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;Step1&quot; : {
+    &quot;Checkbox1&quot; : null,
+    &quot;Amount&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRCreateCapitalCallDemo_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
