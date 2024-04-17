@@ -131,21 +131,7 @@
         <name>tabs</name>
         <type>Facet</type>
     </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>scoreTypes</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>lead</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_leadiq:recordHomeInsightsContainer</componentName>
-                <identifier>runtime_sales_leadiq_recordHomeInsightsContainer</identifier>
-            </componentInstance>
-        </itemInstances>
+    <flexiPageRegions>            
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
