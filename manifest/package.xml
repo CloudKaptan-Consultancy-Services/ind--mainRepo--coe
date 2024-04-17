@@ -18,8 +18,8 @@
     </types>
     <types>
         <members>General_Lead_Queue</members>
-        <members>Medium Worth Lead Queue</members>
-        <members>High Worth Lead Queue</members>
+        <members>Medium_Worth_Lead_Queue</members>
+        <members>High_Worth_Lead_Queue</members>
          <members>Hot_Lead_Queue</members>
         <name>Queue</name>
     </types>
@@ -40,15 +40,6 @@
         <name>RecordType</name>
     </types>
     <types>
-        <members>BuyerAssistantBots</members>
-        <name>Bot</name>
-    </types>
-    <types>
-        <members>Buyer_Assistant_Messaging_Channel</members>
-         <members>Buyer_assistant_demo</members>
-        <name>MessagingChannel</name>
-    </types>
-    <types>
         <members>Lead_Record_Page</members>
         <name>FlexiPage</name>
     </types>
@@ -62,21 +53,14 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>cases_Routing_config</members>
-        <name>QueueRoutingConfig</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>unfiled$public</members>
+        <members>unfiled$public/Response_to_VC_Fund_lead</members>
         <name>EmailTemplate</name>
     </types>
     <types>
         <members>Account.External_ID__c</members>
         <members>Contact.External_Id__c</members>
         <name>CustomField</name>
-    </types>
-    <types>
-        <members>Admin</members>
-        <name>Profile</name>
     </types>
     <version>59.0</version>
 </Package>
