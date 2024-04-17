@@ -59,6 +59,16 @@
         <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
+        <types>
+        <members>DeploySampleController</members>
+        <members>DeploySampleTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Account.External_ID__c</members>
+        <members>Contact.External_Id__c</members>
+        <name>CustomField</name>
+    </types>
     <types>
         <members>Admin</members>
         <name>Profile</name>

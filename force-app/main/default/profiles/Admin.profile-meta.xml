@@ -6,6 +6,12 @@
     </categoryGroupVisibilities>
     <classAccesses>
         <apexClass>LeadConversionBatch</apexClass>
+    <classAccesses>
+        <apexClass>DeploySampleController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DeploySampleTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -32,6 +38,7 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Net_Worth__c</field>
+        <field>Account.External_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -61,6 +68,9 @@
         <recordType>Lead.Investor</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+        <field>Contact.External_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
