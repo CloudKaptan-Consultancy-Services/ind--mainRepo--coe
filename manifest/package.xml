@@ -9,6 +9,7 @@
         <members>Lead.Entered_past_investment_page__c</members>
         <members>Lead.Interested__c</members>
         <members>Lead.Lead_Id__c</members>
+        <members>Account.Lead_Id__c</members>
         <name>CustomField</name>
     </types>
      <types>
@@ -35,10 +36,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>Lead.Lead Process</members>
-        <name>BusinessProcess</name>
-    </types>
-    <types>
         <members>Lead.Investor</members>
         <name>RecordType</name>
     </types>
@@ -59,10 +56,18 @@
         <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
-        <types>
+    <types>
         <members>DeploySampleController</members>
         <members>DeploySampleTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>cases_Routing_config</members>
+        <name>QueueRoutingConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmailTemplate</name>
     </types>
     <types>
         <members>Account.External_ID__c</members>
