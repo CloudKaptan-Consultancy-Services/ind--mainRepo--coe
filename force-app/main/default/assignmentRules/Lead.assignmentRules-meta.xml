@@ -7,9 +7,9 @@
             <assignedTo>Hot_Lead_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>ScoreIntelligence.Score</field>
-                <operation>greaterOrEqual</operation>
-                <value>80</value>
+                <field>Lead.AnnualRevenue</field>
+                <operation>greaterThan</operation>
+                <value>&quot;USD 10,000&quot;</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>

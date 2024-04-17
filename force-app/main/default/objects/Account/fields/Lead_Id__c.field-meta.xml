@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Id__c</fullName>
+    <description>Lead Id will be mapped here which will be used as subscriber key in marketing cloud</description>
+    <externalId>false</externalId>
+    <label>Lead Id</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

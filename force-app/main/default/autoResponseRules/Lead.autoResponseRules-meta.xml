@@ -9,8 +9,8 @@
                 <operation>greaterOrEqual</operation>
                 <value>&quot;USD 50,000&quot;</value>
             </criteriaItems>
-            <senderEmail>vivek.agrawal@cloudkaptan.com</senderEmail>
-            <senderName>Vivek Agrawal</senderName>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
             <template>unfiled$public/Response_to_VC_Fund_lead</template>
         </ruleEntry>
         <ruleEntry>
@@ -24,8 +24,8 @@
                 <operation>lessThan</operation>
                 <value>&quot;USD 50,000&quot;</value>
             </criteriaItems>
-            <senderEmail>vivek.agrawal@cloudkaptan.com</senderEmail>
-            <senderName>Vivek Agrawal</senderName>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
             <template>unfiled$public/Response_to_VC_Fund_lead</template>
         </ruleEntry>
         <ruleEntry>
@@ -34,8 +34,8 @@
                 <operation>lessThan</operation>
                 <value>&quot;USD 20,000&quot;</value>
             </criteriaItems>
-            <senderEmail>vivek.agrawal@cloudkaptan.com</senderEmail>
-            <senderName>Vivek Agrawal</senderName>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
             <template>unfiled$public/Response_to_VC_Fund_lead</template>
         </ruleEntry>
     </autoResponseRule>
