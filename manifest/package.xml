@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Lead.Net_Worth__c</members>
+        <members>Lead.Referred_By__c</members>
+        <members>Lead.Terms_Conditions__c</members>
+        <members>Lead.Email_Communications_Consent__c</members>
+        <members>Lead.Subcribed__c</members>
+        <members>Lead.Entered_past_investment_page__c</members>
+        <members>Lead.Interested__c</members>
+        <members>Lead.Lead_Id__c</members>
+        <name>CustomField</name>
+    </types>
+     <types>
+        <members>Lead-Lead Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>General_Lead_Queue</members>
+        <members>Medium Worth Lead Queue</members>
+        <members>High Worth Lead Queue</members>
+         <members>Hot_Lead_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Lead.Vc Fund Lead Assign Rule</members>
+        <name>AssignmentRule</name>
+    </types>
+    <types>
+        <members>Lead.Vc Fund Lead Response Rule</members>
+        <name>AutoResponseRule</name>
+    </types>
+    <types>
+        <members>Lead.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Lead.Lead Process</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Lead.Investor</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>BuyerAssistantBots</members>
+        <name>Bot</name>
+    </types>
+    <types>
+        <members>Buyer_Assistant_Messaging_Channel</members>
+         <members>Buyer_assistant_demo</members>
+        <name>MessagingChannel</name>
+    </types>
+    <types>
+        <members>Lead_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
     <version>59.0</version>
 </Package>
