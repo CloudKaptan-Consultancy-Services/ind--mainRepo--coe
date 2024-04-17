@@ -38,14 +38,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>Lead.Investor</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>Lead_Record_Page</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
         <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
