@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style> body { font-family: "Times New Roman", Times, serif; }
+         .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f0f5ff; }
+         h1 { color: #0070d2; margin-bottom: 20px; }
+         p { color: #000; line-height: 1.5; margin-bottom: 20px; }
+         .footer { margin-top: 40px; padding-top: 10px; border-top: 1px solid #9b9b9b; text-align: center; background-color: #696969; color: white; font-size: 12px; }
+         .footer p { margin-bottom: 0; color: #ffffff; opacity: 0.9;}
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Thank you for your interest!</h1>
+         <p>Dear {!Lead.Name},</p>
+         <p>Thank you for reaching out to us. We appreciate your interest in investing with our company. We are excited to inform you that we have received your inquiry and will be reviewing it shortly.</p>
+         <p>Please note that we receive a large volume of inquiries, so it may take some time for us to respond. Rest assured that we will carefully consider your submission and get back to you as soon as possible.</p>
+         <p>If you have any urgent questions or concerns, please feel free to contact our investor relations team at <i class="fa fa-phone"></i>
+            <a href="tel:+777-888-9999">(777)-888-9999</a> or <i class="fa fa-envelope"></i> <a href="mailto:investorrelations@vcfunds.com">investorrelations@vcfunds.com</a>.
+         </p>
+         <p>Thank you once again for considering us for your investment. We look forward to the opportunity to work with you!</p>
+         Best regards,<br>
+         VC Funds Support Team
+         <div class="footer">
+            <p>This email is for informational purposes only. It does not constitute an offer to sell or a solicitation of an offer to buy securities. Any offer or solicitation will be made only by means of a confidential offering memorandum and only in jurisdictions where permitted by law.</p>
+            <p>For more information, please visit our website: www.vcfunds.com</p>
+         </div>
+      </div>
+   </body>
+</html>
