@@ -9,6 +9,7 @@
         <members>Lead.Entered_past_investment_page__c</members>
         <members>Lead.Interested__c</members>
         <members>Lead.Lead_Id__c</members>
+        <members>Lead.PersonLeadSource</members>
         <members>Account.Lead_Id__c</members>
         <members>Lead.External_Id__c </members>
         <members>Account.External_Id__c</members>

@@ -149,16 +149,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>showLegacyActivityComposer</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>displayNumber</name>
                     <value>3</value>
                 </componentInstanceProperties>
@@ -169,6 +159,7 @@
                 <componentInstanceProperties>
                     <name>title</name>
                 </componentInstanceProperties>
+
             </componentInstance>
         </itemInstances>
         <name>relatedListTabContent</name>
