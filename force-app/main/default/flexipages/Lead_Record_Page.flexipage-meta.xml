@@ -146,22 +146,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>displayNumber</name>
-                    <value>3</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>isUsedInStandardPage</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                </componentInstanceProperties>
-
-            </componentInstance>
-        </itemInstances>
         <name>relatedListTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
