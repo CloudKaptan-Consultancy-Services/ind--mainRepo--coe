@@ -8,6 +8,11 @@
             "query":"SELECT Id,MacroId,Name,Operation,SortOrder,Target,Value,ValueRecord FROM MacroInstruction",
             "operation":"Upsert",
             "externalId":"Name"
+        },
+        {
+            "query":"SELECT Id,Category,Channel,External_Id__c,Message,Name,IsInsertable FROM QuickText WHERE External_ID__c != null",
+            "operation":"Upsert",
+            "externalId":"External_Id__c"
         }
     ]
 }
