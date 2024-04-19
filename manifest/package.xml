@@ -12,13 +12,7 @@
         <members>Account.AccountSource</members>
         <members>Account.Lead_Id__c</members>
         <members>Lead.External_Id__c </members>
-        <members>Account.External_Id__c</members>
-        <members>Contact.External_Id__c</members>
         <name>CustomField</name>
-    </types>
-     <types>
-        <members>Lead-Lead Layout</members>
-        <name>Layout</name>
     </types>
     <types>
         <members>General_Lead_Queue</members>
