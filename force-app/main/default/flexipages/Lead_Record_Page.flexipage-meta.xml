@@ -131,21 +131,7 @@
         <name>tabs</name>
         <type>Facet</type>
     </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>scoreTypes</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>lead</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_leadiq:recordHomeInsightsContainer</componentName>
-                <identifier>runtime_sales_leadiq_recordHomeInsightsContainer</identifier>
-            </componentInstance>
-        </itemInstances>
+    <flexiPageRegions>            
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -160,33 +146,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>showLegacyActivityComposer</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>displayNumber</name>
-                    <value>3</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>isUsedInStandardPage</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityRecommendedConnections</componentName>
-                <identifier>runtime_sales_activities_activityRecommendedConnections</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>relatedListTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
