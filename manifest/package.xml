@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>Lead.Net_Worth__c</members>
@@ -48,6 +48,47 @@
         <name>LeadConvertSettings</name>
     </types>
     <types>
+        <members>FCLPBackgroundCheck_CKS_1</members>
+        <members>displayCommitmentsDemo_CKS_1</members>
+        <members>displayCapitalCallDemo_CKS_1</members>
+        <name>OmniUiCard</name>
+    </types>
+    <types>
+        <members>IPvalidateLPcallout_Demo_Procedure_1</members>
+        <members>useFileData_DemoProcedure_1</members>
+        <name>OmniIntegrationProcedure</name>
+    </types>
+    <types>
+        <members>OSLPBackgroungCheck_Demo_English_1</members>
+        <members>CapitalCall_create_English_4</members>
+        <members>Email_sendEmail_English_2</members>
+        <members>OSUploadFileforPayment_Demo_English_2</members>
+        <name>OmniScript</name>
+    </types>
+    <types>
+        <members>formatSSN_1</members>
+        <members>DRFetchCommitmentDemo_1</members>
+        <members>DRGetFinancialAccountDemo_1</members>
+        <members>DRCreateCapitalCallDemo_1</members>
+        <members>DRUpdateCommitmentDemo_1</members>
+        <members>DRGetOwnerDetailsDemo_1</members>
+        <members>FetchUploadedFileDemo_1</members>
+        <name>OmniDataTransform</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniInteractionAccessConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniInteractionConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniSupervisorConfig</name>
+    </types>
+    <types>
+        <members>OmniStudioCustomFunction</members>
         <members>DeploySampleController</members>
         <members>DeploySampleTest</members>
         <name>ApexClass</name>
