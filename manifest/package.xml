@@ -96,5 +96,9 @@
         <members>unfiled$public/Response_to_VC_Fund_lead</members>
         <name>EmailTemplate</name>
     </types>
+     <types>
+        <members>LeadSource</members>
+        <name>StandardValueSet</name>
+    </types>
     <version>59.0</version>
 </Package>
