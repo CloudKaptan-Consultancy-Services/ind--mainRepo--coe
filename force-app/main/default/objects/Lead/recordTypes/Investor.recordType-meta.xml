@@ -158,10 +158,6 @@
     <picklistValues>
         <picklist>LeadSource</picklist>
         <values>
-            <fullName>Business Incubators</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Cold Emails</fullName>
             <default>false</default>
         </values>
