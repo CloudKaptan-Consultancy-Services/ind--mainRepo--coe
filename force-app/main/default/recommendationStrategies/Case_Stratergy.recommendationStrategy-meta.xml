@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Case</contextRecordType>
+    <filter>
+        <label>Filter Cases</label>
+        <name>Filter_Cases</name>
+        <expression>ISPICKVAL($Record.Status, &apos;New&apos;)</expression>
+    </filter>
+    <label>Case_Stratergy</label>
+    <union>
+        <childNode>Filter_Cases</childNode>
+        <label>Output</label>
+        <name>Output_ba2b5b76583540668f41bc4a1e99ac23</name>
+    </union>
+</RecommendationStrategy>
