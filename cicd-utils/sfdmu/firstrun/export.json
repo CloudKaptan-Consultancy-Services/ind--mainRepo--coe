@@ -13,6 +13,11 @@
             "query":"SELECT Id,Category,Channel,External_Id__c,Message,Name,IsInsertable FROM QuickText WHERE External_ID__c != null",
             "operation":"Upsert",
             "externalId":"External_Id__c"
+        },
+        {
+            "query":"SELECT Id,Name,AcceptanceLabel,ActionReference,External_Id__c,Description,IsActionActive,RejectionLabel FROM Recommendation WHERE External_ID__c != null",
+            "operation":"Upsert",
+            "externalId":"External_Id__c"
         }
     ]
 }
