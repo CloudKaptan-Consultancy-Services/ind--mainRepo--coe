@@ -44,10 +44,6 @@
         <developerName>RoutableId</developerName>
         <label>Routable Id</label>
     </contextVariables>
-    <conversationChannelProviders>
-        <agentRequired>false</agentRequired>
-        <chatButtonName>Chat_Button</chatButtonName>
-    </conversationChannelProviders>
     <description>A bot from scratch.</description>
     <label>Alice</label>
     <logPrivateConversationData>false</logPrivateConversationData>
