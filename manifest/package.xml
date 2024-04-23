@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+    <members>Live_Agent</members>
+    <name>Queue</name>
+    </types>
+    <types>
+        <members>Live_Agent</members>
+        <name>MessagingChannel</name>
+    </types>
+    <types>
         <members>FCLPBackgroundCheck_CKS_1</members>
         <members>displayCommitmentsDemo_CKS_1</members>
         <members>displayCapitalCallDemo_CKS_1</members>
