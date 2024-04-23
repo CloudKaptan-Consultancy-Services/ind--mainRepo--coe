@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>59.0</version>
+    <types>
+        <members>Ask_about_a_case</members>
+        <members>Draft_Account_Description</members>
+        <members>Follow_up_on_missed_Capital_Call</members>
+        <members>generate_case_update</members>
+        <members>Get_Lead_Summary</members>
+        <members>Investment_Offers_discussion_email</members>
+        <members>Summarize_Open_Cases</members>
+        <name>GenAiPromptTemplate</name>
+    </types>
+    <types>
+        <members>Prompt_Get_Open_cases</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Case.Issue__c</members>
+        <members>Case.Summary__c</members>
+        <members>Case.Resolution__c</members>
+        <members>Lead.Lead_AI_Summary__c</members>
+        <members>Lead.Net_Worth__c</members>
+        <members>Lead.Referred_By__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Settings</name>
+    </types>
+    <version>60.0</version>
 </Package>

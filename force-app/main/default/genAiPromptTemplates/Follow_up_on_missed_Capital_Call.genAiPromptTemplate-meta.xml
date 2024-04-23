@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>1</activeVersion>
+    <description>Follow up on missed Capital Call</description>
+    <developerName>Follow_up_on_missed_Capital_Call</developerName>
+    <masterLabel>Follow up on missed Capital Call</masterLabel>
+    <relatedEntity>Contact</relatedEntity>
+    <templateVersions>
+        <content>You are a fund manager at Growth Heaven.
+Draft an email to follow up on the missed capital call to a limited partner.
+Add personalised details about the contact.
+Keep the tone positive and exciting.
+The result should be in english.
+Limited partner name should be {!$Input:Recipient.Name}
+fund manager name should be {!$Input:Sender.Name}
+Add the capital calls details in the email.
+Amount : {!$Input:Capital_Call__c.Capital_Call_Amount__c},
+Commitment Account : {!$Input:Capital_Call__c.Commitment_Account__r.Name},
+Due Date : {!$Input:Capital_Call__c.Due_Date__c}
+</content>
+        <inputs>
+            <apiName>Sender</apiName>
+            <definition>SOBJECT://User</definition>
+            <referenceName>Input:Sender</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Recipient</apiName>
+            <definition>SOBJECT://Contact</definition>
+            <referenceName>Input:Recipient</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>RelatedObject</apiName>
+            <definition>SOBJECT://Capital_Call__c</definition>
+            <referenceName>Input:Capital_Call__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__salesEmail</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
