@@ -29,9 +29,6 @@
         <apexClass>DeploySampleTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <layoutAssignments>
-        <layout>ServiceResource-Service Resource Layout</layout>
-    </layoutAssignments>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
