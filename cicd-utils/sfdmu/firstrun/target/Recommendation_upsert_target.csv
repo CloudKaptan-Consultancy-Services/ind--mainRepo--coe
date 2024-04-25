@@ -1,0 +1,2 @@
+AcceptanceLabel,ActionReference,Description,External_Id__c,Id,IsActionActive,Name,RejectionLabel
+Update Case Status to 'In Progress',Update_Case_Status,Update Case Status,0prU700000000UfIAI,0prU700000000UfIAI,true,Update Case Status,Reject
