@@ -113,5 +113,21 @@
         <members>LeadSource</members>
         <name>StandardValueSet</name>
     </types>
+	<types>
+		<members>LightningService_UtilityBar</members>
+		<name>FlexiPage</name>
+    </types>
+	<types>
+		<members>Update_Case_Status</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Case_Stratergy</members>
+		<name>RecommendationStrategy</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ServiceChannel</name>
+	</types>
     <version>60.0</version>
 </Package>
