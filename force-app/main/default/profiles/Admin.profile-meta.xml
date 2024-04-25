@@ -9,15 +9,8 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>QuickText.External_Id__c</field>
+        <readable>true</readable>
     </fieldPermissions>
-    <classAccesses>
-        <apexClass>DeploySampleController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>DeploySampleTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.External_ID__c</field>
@@ -33,6 +26,19 @@
         <field>Recommendation.External_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceResource.External_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <classAccesses>
+        <apexClass>DeploySampleController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DeploySampleTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <layoutAssignments>
         <layout>ServiceResource-Service Resource Layout</layout>
     </layoutAssignments>
