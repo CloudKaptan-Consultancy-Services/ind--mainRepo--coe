@@ -16,7 +16,6 @@
                 <assignedToType>Queue</assignedToType>
                 <minutesToEscalation>120</minutesToEscalation>
                 <notifyCaseOwner>false</notifyCaseOwner>
-                <notifyToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</notifyToTemplate>
             </escalationAction>
             <escalationStartTime>CaseCreation</escalationStartTime>
         </ruleEntry>
