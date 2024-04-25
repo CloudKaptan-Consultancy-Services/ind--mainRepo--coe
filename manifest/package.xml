@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>Prompt_Get_Open_cases</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>EinsteinAgentSettings</members>
+        <members>EinsteinAISettings</members>
+        <members>EinsteinGptSettings</members>
+        <name>Settings</name>
+    </types>
+    <types>
         <members>Lead.Net_Worth__c</members>
         <members>Lead.Referred_By__c</members>
         <members>Lead.Terms_Conditions__c</members>
@@ -12,6 +22,10 @@
         <members>Account.AccountSource</members>
         <members>Account.Lead_Id__c</members>
         <members>Lead.External_Id__c </members>
+        <members>Case.Issue__c</members>
+        <members>Case.Summary__c</members>
+        <members>Case.Resolution__c</members>
+        <members>Lead.Lead_AI_Summary__c</members>
         <name>CustomField</name>
     </types>
     <types>
