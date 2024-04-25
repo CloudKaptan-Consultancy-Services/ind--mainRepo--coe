@@ -69,7 +69,6 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <fields>SkillMasterLabel</fields>
         <fields>SkillLevel</fields>
         <fields>EffectiveStartDate</fields>
         <fields>EffectiveEndDate</fields>
