@@ -58,7 +58,7 @@ Setup -> Quick Find box -> Omni-Channel Settings -> Enable Skills-Based and Dire
 Setup -> Quick Find box -> Click on Field Service Settings -> Enable Field Service -> click Save
 Setup -> Quick Find box -> Omni-Channel -> Skills -> New Button -> Enter Name-Spanish, Assign Users-Arnab, Assign Profile -Admin
 App Launcher -> Service Resource -> Open the present record , Assign User- Arnab. Make sure it is active. Click Save.
-Scroll to the Service Resource Skills section and click New -> Select skill -> Enter a start date -> Click Save.
+Scroll to the Service Resource Skills related list and click New -> Select skill -> Enter a start date -> Click Save.
 Service Setup -> Skills-Based Routing Rules -> Click New Skill Mapping Set -> Enter Name,DeveloperName - Spanish, Object- Case
     Select the fields to use for routing your cases - select 'Type' -> Next -> put the field value and 'Spanish' skill -> Done. 
 Setup -> Routing Configurations -> Edit the routing configuration that is used with omni-channel -> Select 
