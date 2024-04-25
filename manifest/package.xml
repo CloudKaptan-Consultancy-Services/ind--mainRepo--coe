@@ -1,15 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
 		<members>Macro.External_Id__c</members>
 		<members>QuickText.External_Id__c</members>
 		<members>Recommendation.External_Id__c</members>
         <members>ServiceResource.External_Id__c</members>
-		<name>CustomField</name>
-	</types>
-    <types>
+        <members>Lead.Net_Worth__c</members>
+        <members>Lead.Referred_By__c</members>
+        <members>Lead.Terms_Conditions__c</members>
+        <members>Lead.Email_Communications_Consent__c</members>
+        <members>Lead.Subcribed__c</members>
+        <members>Lead.Entered_past_investment_page__c</members>
+        <members>Lead.Interested__c</members>
+        <members>Lead.Lead_Id__c</members>
+        <members>Account.AccountSource</members>
+        <members>Account.Lead_Id__c</members>
+        <members>Lead.External_Id__c </members>
+        <name>CustomField</name>
+    </types>
+	<types>
 		<members>Admin</members>
 		<name>Profile</name>
 	</types>
-    <version>59.0</version>
+    <types>
+        <members>General_Lead_Queue</members>
+        <members>Medium_Worth_Lead_Queue</members>
+        <members>High_Worth_Lead_Queue</members>
+         <members>Hot_Lead_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Lead.Vc Fund Lead Assign Rule</members>
+        <name>AssignmentRule</name>
+    </types>
+    <types>
+        <members>Lead.Vc Fund Lead Response Rule</members>
+        <name>AutoResponseRule</name>
+    </types>
+    <types>
+        <members>Lead.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Lead_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>LeadConvertSettings</members>
+        <name>LeadConvertSettings</name>
+    </types>
+    <types>
+        <members>FCLPBackgroundCheck_CKS_1</members>
+        <members>displayCommitmentsDemo_CKS_1</members>
+        <members>displayCapitalCallDemo_CKS_1</members>
+        <name>OmniUiCard</name>
+    </types>
+    <types>
+        <members>IPvalidateLPcallout_Demo_Procedure_1</members>
+        <members>useFileData_DemoProcedure_1</members>
+        <name>OmniIntegrationProcedure</name>
+    </types>
+    <types>
+        <members>OSLPBackgroungCheck_Demo_English_1</members>
+        <members>CapitalCall_create_English_4</members>
+        <members>Email_sendEmail_English_2</members>
+        <members>OSUploadFileforPayment_Demo_English_2</members>
+        <name>OmniScript</name>
+    </types>
+    <types>
+        <members>formatSSN_1</members>
+        <members>DRFetchCommitmentDemo_1</members>
+        <members>DRGetFinancialAccountDemo_1</members>
+        <members>DRCreateCapitalCallDemo_1</members>
+        <members>DRUpdateCommitmentDemo_1</members>
+        <members>DRGetOwnerDetailsDemo_1</members>
+        <members>FetchUploadedFileDemo_1</members>
+        <name>OmniDataTransform</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniInteractionAccessConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniInteractionConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniSupervisorConfig</name>
+    </types>
+    <types>
+        <members>OmniStudioCustomFunction</members>
+        <members>DeploySampleController</members>
+        <members>DeploySampleTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Lead.Type 1</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>unfiled$public</members>
+        <members>unfiled$public/Response_to_VC_Fund_lead</members>
+        <name>EmailTemplate</name>
+    </types>
+     <types>
+        <members>LeadSource</members>
+        <name>StandardValueSet</name>
+    </types>
+    <version>60.0</version>
 </Package>
