@@ -22,9 +22,18 @@
         <members>General_Lead_Queue</members>
         <members>Medium_Worth_Lead_Queue</members>
         <members>High_Worth_Lead_Queue</members>
-         <members>Hot_Lead_Queue</members>
+        <members>Hot_Lead_Queue</members>
+        <members>Servicing_General_Support</members>
         <name>Queue</name>
     </types>
+    <types>
+		<members>Case</members>
+		<name>AssignmentRules</name>
+	</types>
+    <types>
+		<members>Case</members>
+		<name>EscalationRules</name>
+	</types>
     <types>
         <members>Lead.Vc Fund Lead Assign Rule</members>
         <name>AssignmentRule</name>
@@ -73,18 +82,6 @@
         <members>FetchUploadedFileDemo_1</members>
         <name>OmniDataTransform</name>
     </types>
-    <types>
-		<members>Servicing_General_Support</members>
-		<name>Queue</name>
-	</types>
-    <types>
-		<members>Case</members>
-		<name>AssignmentRules</name>
-	</types>
-    <types>
-		<members>Case</members>
-		<name>EscalationRules</name>
-	</types>
     <types>
         <members>*</members>
         <name>OmniInteractionAccessConfig</name>
