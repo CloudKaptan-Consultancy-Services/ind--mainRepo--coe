@@ -10,6 +10,12 @@
 		<name>Bot</name>
 	</types>
 	<types>
+		<members>Macro.External_Id__c</members>
+		<members>QuickText.External_Id__c</members>
+		<members>Recommendation.External_Id__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
 		<members>Case</members>
 		<name>EscalationRules</name>
 	</types>
@@ -22,15 +28,13 @@
 		<name>Flow</name>
 	</types>
 	<types>
+		<members>ServiceResource-Service Resource Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
 		<members>Busy</members>
 		<name>PresenceDeclineReason</name>
 	</types>
-	<types>
-        <members>Recommendation.External_Id__c</members>
-		<members>Macro.External_Id__c</members>
-        <members>QuickText.External_Id__c</members>
-        <name>CustomField</name>
-    </types>
 	<types>
 		<members>Admin</members>
 		<name>Profile</name>
