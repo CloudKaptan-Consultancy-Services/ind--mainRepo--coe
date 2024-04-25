@@ -74,6 +74,18 @@
         <name>OmniDataTransform</name>
     </types>
     <types>
+		<members>Servicing_General_Support</members>
+		<name>Queue</name>
+	</types>
+    <types>
+		<members>Case</members>
+		<name>AssignmentRules</name>
+	</types>
+    <types>
+		<members>Case</members>
+		<name>EscalationRules</name>
+	</types>
+    <types>
         <members>*</members>
         <name>OmniInteractionAccessConfig</name>
     </types>
