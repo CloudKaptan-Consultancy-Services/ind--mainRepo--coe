@@ -18,6 +18,11 @@
             "query":"SELECT Id,Name,AcceptanceLabel,ActionReference,External_Id__c,Description,IsActionActive,RejectionLabel FROM Recommendation WHERE External_ID__c != null",
             "operation":"Upsert",
             "externalId":"External_Id__c"
+        },
+        {
+            "query":"SELECT Id,Description,IsActive,Name,ResourceType,External_Id__c FROM ServiceResource",
+            "operation":"Upsert",
+            "externalId":"External_Id__c"
         }
     ]
 }
