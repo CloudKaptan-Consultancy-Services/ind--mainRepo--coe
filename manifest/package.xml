@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-		<members>Macro.External_Id__c</members>
-		<members>QuickText.External_Id__c</members>
-		<members>Recommendation.External_Id__c</members>
-        <members>ServiceResource.External_Id__c</members>
         <members>Lead.Net_Worth__c</members>
         <members>Lead.Referred_By__c</members>
         <members>Lead.Terms_Conditions__c</members>
