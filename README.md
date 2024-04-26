@@ -33,4 +33,4 @@ sfdx force:org:display -u targetOrgAlias --verbose
     3. Go to from Map Responses to Knowledge Fields, on the Knowledge Creation setup page, select Edit.
     4. To add and map fields, click Add Field. Select the Knowledge field and map it to a corresponding response.
     5. Assign your selected agents the Einstein Knowledge Creation permission set. The permission set is included with the   Einstein for Service add on.
-    
+   

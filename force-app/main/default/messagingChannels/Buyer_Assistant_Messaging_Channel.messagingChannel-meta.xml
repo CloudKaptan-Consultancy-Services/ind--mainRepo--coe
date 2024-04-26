@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessagingChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Buyer Assistant Messaging Channel</masterLabel>
+    <messagingChannelType>EmbeddedMessaging</messagingChannelType>
+    <sessionHandlerFlow>Route_to_BuyerAssistantBots</sessionHandlerFlow>
+    <sessionHandlerQueue>BuyerAssistant_Queue_Group</sessionHandlerQueue>
+    <sessionHandlerType>Flow</sessionHandlerType>
+</MessagingChannel>

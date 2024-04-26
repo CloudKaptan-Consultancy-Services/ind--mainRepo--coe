@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>2</activeVersion>
+    <developerName>Summarize_Open_Cases</developerName>
+    <masterLabel>Summarize Open Cases</masterLabel>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.Open_Case_Summary__c</relatedField>
+    <templateVersions>
+        <content>You’re a support representative, and you need to create a short summary of all open cases
+for account {!$Input:Account.Id}.
+When I ask you to summarize the open cases, you must strictly follow my instructions below.
+
+Instructions:
+&quot;&quot;&quot;
+Summarize the open cases in one paragraph no longer than 500 characters. Mention how many open cases there are and what the case issues are.
+Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words and phrases and redundant language. 
+Use the following information to write the summary.{!$Flow:Prompt_Get_Open_cases.Prompt}
+Do not attribute any positive or negative traits in the summary.
+Do not mention Id of the account. Mention {!$Input:Account.Name} instead.
+&quot;&quot;&quot;
+
+Now create the summary.
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Get_Open_cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Get_Open_cases</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You’re a support representative, and you need to create a short summary of all open cases
+for account {!$Input:Account.Id}.
+When I ask you to summarize the open cases, you must strictly follow my instructions below.
+
+Instructions:
+&quot;&quot;&quot;
+Summarize the open cases in one paragraph no longer than 500 characters. Mention how many open cases there are and what the case issues are.
+Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words and phrases and redundant language. 
+Use the following information to write the summary.{!$Flow:Prompt_Get_Open_cases.Prompt}
+Do not attribute any positive or negative traits in the summary.
+Do not mention Id of the account. Mention {!$Input:Account.Name} instead.
+Make the summary more generalised, do not make it technical.
+&quot;&quot;&quot;
+
+Now create the summary.
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Get_Open_cases</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Get_Open_cases</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
