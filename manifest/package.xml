@@ -3,7 +3,6 @@
     <types>
 		<members>QuickText.External_Id__c</members>
 		<members>Recommendation.External_Id__c</members>
-        <members>ServiceResource.External_Id__c</members>
         <members>Lead.Net_Worth__c</members>
         <members>Lead.Referred_By__c</members>
         <members>Lead.Terms_Conditions__c</members>
