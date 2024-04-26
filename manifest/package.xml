@@ -18,6 +18,10 @@
         <members>Lead.External_Id__c </members>
         <name>CustomField</name>
     </types>
+	<types>
+		<members>Admin</members>
+        <name>Profile</name>
+	</types>
     <types>
         <members>General_Lead_Queue</members>
         <members>Medium_Worth_Lead_Queue</members>
