@@ -132,9 +132,5 @@
 		<members>*</members>
 		<name>ServiceChannel</name>
 	</types>
-    <types>
-		<members>Alice</members>
-		<name>Bot</name>
-	</types>
     <version>60.0</version>
 </Package>
