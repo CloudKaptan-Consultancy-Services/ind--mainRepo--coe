@@ -284,7 +284,7 @@ Connect to an agent right away!</message>
     <botDialogs>
         <botSteps>
             <botMessages>
-                <message>Hi, I&apos;m Alice, a digital assistant.</message>
+                <message>Hi, I&apos;m Astro, a digital assistant.</message>
                 <messageIdentifier>c3cbc642-a887-4ccf-8f44-e09135cc3c0b</messageIdentifier>
             </botMessages>
             <stepIdentifier>0b9d521f-ed59-4f3b-9472-9baad46818f6</stepIdentifier>
