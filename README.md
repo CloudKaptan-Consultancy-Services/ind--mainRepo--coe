@@ -70,8 +70,8 @@ Then, activate the model to start showing recommendations in the Service Console
 
 * Einstein Next Best Action
 Setup -> Flows -> Activate 'Update Case Status' Flow
-App Launcher -> Recommendations -> Open 'Update Case Status' Recommendation -> Verify 'Is Action Active' is true -> Copy Recommendation RecordId
-Setup -> Next Best action -> Open the 'Case Stratergy' Stratergy -> Click on 'Load' element -> In Recommendation conditions to be met , paste the Recommendation RecordId 
+App Launcher -> Recommendations -> 'New Button' -> Name-'Update Case Status',Action-Update Case Status,put other required fields, Save
+Setup -> Next Best action -> Open the 'Case Stratergy' Stratergy -> Click on 'Load' element -> In Recommendation conditions to be met , paste the Recommendation RecordId of the record you just created
     such that Id equals Recommendation RecordId . -> Save Stratergy
 Add the Next Best Action Component to the Lightning Service Console : App Launcher -> Service Console -> Navigate to Cases -> Open a case record -> Click on gear icon -> Click Edit Page 
 -> Type 'Next best Action' component and drag & drop to Case Record Page -> Choose 'Update Case Status' component in the Next Best Action component -> Save 
