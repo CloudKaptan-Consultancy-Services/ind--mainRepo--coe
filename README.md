@@ -22,10 +22,17 @@ sfdx force:org:display -u targetOrgAlias --verbose
     Referrence :https://cloudkaptan-my.sharepoint.com/:p:/p/sanjukta_chanda/EQbyo4JQmaFDvSch7pfu5CcB1iKSNm8sfJiicyTbfA1H0A?e=ZV2QJp
 
 6. Einstein Conversation Summaries :
-    a. Go to the Einstein Work Summaries page in Setup.
-    b. Turn on Work Summaries.
-    c. click the Conversation Catch-Up tab, and 
-    d. then turn on summaries for agents, supervisors, or both.
+    1. Go to the Einstein Work Summaries page in Setup.
+    2. Turn on Work Summaries.
+    3. click the Conversation Catch-Up tab, and 
+    4. then turn on summaries for agents, supervisors, or both.
+
+7. Einstein Knowledge Creation
+    1. From Setup, in the Quick Find box, enter Knowledge Creation, and then select Einstein Knowledge Creation.
+    2. Turn on Knowledge Creation.
+    3. Go to from Map Responses to Knowledge Fields, on the Knowledge Creation setup page, select Edit.
+    4. To add and map fields, click Add Field. Select the Knowledge field and map it to a corresponding response.
+    5. Assign your selected agents the Einstein Knowledge Creation permission set. The permission set is included with the   Einstein for Service add on.
 
 # SERVICE CLOUD
 
@@ -113,7 +120,3 @@ Navigate to Gear Icon -> Service Setup -> In Recommended Setup , click on View A
     -> Start -> Choose Your Lightning Knowledge Authors -> Add Admin Service Cloud User -> Next -> Next -> Finish
 App Launcher -> Knowledge -> Click 'New' button -> FAQ -> Title, Url, Question -'How to apply for Top-up?',Answer-Any Answer
     -> Leave other fields as it is -> Save. -> To publish Knowledge Article click on 'Publish' lightning button.
-
-
-
-
