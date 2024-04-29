@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Response to VC Fund lead</name>
+    <style>none</style>
+    <subject>Thank you for your interest</subject>
+    <textOnly>Thank you for your interest!
+
+Dear {!Lead.Name},
+
+Thank you for reaching out to us. We appreciate your interest in investing with our company. We are excited to inform you that we have received your inquiry and will be reviewing it shortly.
+
+Please note that we receive a large volume of inquiries, so it may take some time for us to respond. Rest assured that we will carefully consider your submission and get back to you as soon as possible.
+
+If you have any urgent questions or concerns, please feel free to contact our investor relations team at  (777)-888-9999 or  investorrelations@vcfunds.com.
+
+Thank you once again for considering us for your investment. We look forward to the opportunity to work with you!
+
+Best regards,
+VC Funds Support Team
+
+This email is for informational purposes only. It does not constitute an offer to sell or a solicitation of an offer to buy securities. Any offer or solicitation will be made only by means of a confidential offering memorandum and only in jurisdictions where permitted by law.
+
+For more information, please visit our website: www.vcfunds.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

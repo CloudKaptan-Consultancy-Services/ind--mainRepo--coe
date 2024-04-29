@@ -8,6 +8,5 @@
         "query":"Select id, Lastname, External_Id__c, Accountid from Contact",
         "operation":"Upsert",
         "externalId":"External_Id__c"
-    }
-]
+    }]
 }

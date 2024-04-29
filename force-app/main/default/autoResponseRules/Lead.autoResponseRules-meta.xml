@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Vc Fund Lead Response Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Net_Worth__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;USD 50,000&quot;</value>
+            </criteriaItems>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
+            <template>unfiled$public/Response_to_VC_Fund_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Net_Worth__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>&quot;USD 20,000&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Net_Worth__c</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 50,000&quot;</value>
+            </criteriaItems>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
+            <template>unfiled$public/Response_to_VC_Fund_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Net_Worth__c</field>
+                <operation>lessThan</operation>
+                <value>&quot;USD 20,000&quot;</value>
+            </criteriaItems>
+            <senderEmail>arnab@cloudkaptan.com</senderEmail>
+            <senderName>Arnab Mukherjee</senderName>
+            <template>unfiled$public/Response_to_VC_Fund_lead</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
