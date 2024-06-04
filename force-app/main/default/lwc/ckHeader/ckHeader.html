@@ -1,0 +1,139 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-07-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-29-2024   Arijit   Initial Version
+-->
+<template>
+    <template if:true={showHamburgerMenu}>
+        <div class="slds-grid hamburger-menu-container" style="position:fixed;top:0;left:0;height:100vh">
+            <div class="slds-col slds-size_5-of-6">
+                <div
+                    class="slds-grid slds-var-p-left_small slds-var-p-top_small slds-grid_vertical hamburger-menu"
+                >
+                    <div class="slds-col" style="display:flex;flex-direction:column">
+                        <c-ck-header-logo></c-ck-header-logo>
+                        
+                            <div class="slds-align_absolute-center" style="flex-direction:column">
+                                <span>
+                                    <nav role="navigation" class="slds-nav-vertical">
+                                        <!-- <ul class="slds-has-block-links_space"> -->
+                                            <template
+                                                for:each={menuItems}
+                                                for:item="item"
+                                            >
+                                                <!-- <li key={item.id} class="navbar-items"> -->
+                                                    <div key={item.id} class="slds-var-p-around_small">
+                                                        <c-ck-navigation-menu-item item={item} is-selected={item.isSelected} ontabselected={handleSelection}></c-ck-navigation-menu-item>
+                                                    </div>
+                                                <!-- </li> -->
+                                            </template>
+                                        <!-- </ul> -->
+                                    </nav>
+                                </span>
+                                <div style="display:flex;flex-direction:row;justify-content:center;">
+                                    <div>
+                                        <c-ck-theme-selector>
+                                        </c-ck-theme-selector>
+                                    </div>
+                                    <template 
+                                        if:false={isGuestUser}
+                                    >
+                                        <lightning-button-menu alternative-text="Show menu" variant="border-filled" icon-name="action:user">
+                                            <lightning-menu-item disabled label={userName}></lightning-menu-item>
+                                            <lightning-menu-item value="logout" label="Logout" onclick={handleLogout}></lightning-menu-item>
+                                        </lightning-button-menu>
+                                    </template>
+                                    <template
+                                        if:true={isGuestUser}
+                                    >
+                                        <lightning-button
+                                            variant="brand"
+                                            label={buttonLabel}
+                                            title="Primary action"
+                                            onclick={handleBtnClick}
+                                        ></lightning-button>
+                                    </template>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-6">
+                <a href={href} onclick={handleHamburgerMenuToggle}
+                    ><img
+                        class="slds-var-p-left_small slds-var-p-top_small"
+                        style="max-width: 2rem;height: auto;"
+                        src={xIcon}
+                /></a>
+            </div>
+        </div>
+    </template>
+    <lightning-layout multiple-rows="true" style="display: flex; width:100%; align-items: center;">
+        <lightning-layout-item size="12" small-device-size="12" medium-device-size="4" large-device-size="3" style="display:flex;flex-direction:row;">
+            <template if:false={showHamburgerMenu}>
+                <div
+                    class="slds-col slds-var-p-top_small slds-var-p-right_small slds-hide_medium"
+                >
+                    <a
+                        class="slds-float_right"
+                        href={href}
+                        onclick={handleHamburgerMenuToggle}
+                        ><img style="max-width: 2rem;height: auto;" src={hamburgerIcon}
+                    /></a>
+                </div>
+            </template>
+            <div>
+                <c-ck-header-logo></c-ck-header-logo>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-show_small" size="12" small-device-size="12" medium-device-size="8" large-device-size="9" style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
+            <div>
+                <!-- Navigation items will come under here-->
+                <nav role="navigation">
+                    <div style="display:flex;flex-direction:row">
+                        <template
+                            for:each={menuItems}
+                            for:item="item"
+                        >
+                            <div key={item.id} class="slds-var-p-around_small">
+                                <c-ck-navigation-menu-item item={item} is-selected={item.isSelected} ontabselected={handleSelection}></c-ck-navigation-menu-item>
+                            </div>
+                        </template>
+                    </div>
+                </nav>
+            </div>
+            <div style="display:flex;flex-direction:row;">
+                <div>
+                    <c-ck-theme-selector>
+                    </c-ck-theme-selector>
+                </div>
+                <template 
+                    if:false={isGuestUser}
+                >
+                    <lightning-button-menu alternative-text="Show menu" variant="border-filled" icon-name="action:user">
+                        <lightning-menu-item disabled label={userName}></lightning-menu-item>
+                        <lightning-menu-item value="logout" label="Logout" onclick={handleLogout}></lightning-menu-item>
+                    </lightning-button-menu>
+                </template>
+                <template
+                    if:true={isGuestUser}
+                >
+                    <lightning-button
+                        variant="brand"
+                        label={buttonLabel}
+                        title="Primary action"
+                        onclick={handleBtnClick}
+                    ></lightning-button>
+                </template>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

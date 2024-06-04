@@ -1,0 +1,7 @@
+:root {
+  --slds-c-input-shadow-focus: #ffffff;
+  --dxp-g-brand-contrast-1: #F5F6F8;
+  .slds-dropdown_left {
+        left: -3rem !important;
+   }
+}

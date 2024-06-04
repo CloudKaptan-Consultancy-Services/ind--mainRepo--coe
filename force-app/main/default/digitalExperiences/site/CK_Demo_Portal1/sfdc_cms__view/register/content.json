@@ -1,0 +1,74 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Register",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e20c770c-24f3-436b-8f12-61a04e5f646b\",\"columns\":[{\"UUID\":\"9eabc14b-93e0-4d16-830e-1980f2108949\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "confirmPasswordLabel" : "Confirm Password",
+                "confirmPasswordPlaceholder" : "Your Confirm Password",
+                "firstNameLabel" : "First Name",
+                "firstNamePlaceholder" : "Your First Name",
+                "formTitle" : "Sign Up",
+                "lastNameLabel" : "Last Name",
+                "lastNamePlaceholder" : "Your Last Name",
+                "passwordLabel" : "Password",
+                "passwordPlaceholder" : "Your Password",
+                "submitButtonLabel" : "Submit",
+                "userNameLabel" : "Username",
+                "userNamePlaceholder" : "Your Username"
+              },
+              "definition" : "c:ckSignup",
+              "id" : "908ebd5c-45ed-4c10-ab41-88c62cf4df64",
+              "type" : "component"
+            } ],
+            "id" : "9eabc14b-93e0-4d16-830e-1980f2108949",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e20c770c-24f3-436b-8f12-61a04e5f646b",
+          "type" : "component"
+        } ],
+        "id" : "2863b57e-8d2c-4ca0-97dd-ca874a440145",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Register",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "e10db025-59ad-4671-94a5-6e3ae7ed1110",
+          "type" : "component"
+        } ],
+        "id" : "6b79cf1d-8941-459b-885f-be48bce39591",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "38fe52b9-ca4d-4a72-bb83-ce926871c743",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "I7sD15erG9236GhGgVL615AGLCnRkS",
+    "viewType" : "self-register"
+  }
+}

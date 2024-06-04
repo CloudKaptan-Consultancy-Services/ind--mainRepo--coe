@@ -1,0 +1,104 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "CK Portal",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"bd684b70-b36e-429f-b68a-4982538a8c92\",\"columns\":[{\"UUID\":\"53c0fd03-ec78-40d0-8910-e8977b21c271\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "caseNumberLabel" : "Case Number",
+                "casePriorityLabel" : "Case Priority",
+                "caseTypeLabel" : "Case Type",
+                "contactLabel" : "Contact Name",
+                "dateTimeLabel" : "Date & Time Issue Occured",
+                "descriptionLabel" : "Description",
+                "productLabel" : "Product Name",
+                "sfq2projectLabel" : "Salesforce Project Name",
+                "subjectLabel" : "Subject",
+                "uploadFileLabel" : "Upload File"
+              },
+              "definition" : "c:ckCaseDetail",
+              "id" : "9a1e77e8-4bb1-4c3a-b23f-5dde35fa5946",
+              "type" : "component"
+            } ],
+            "id" : "53c0fd03-ec78-40d0-8910-e8977b21c271",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "bd684b70-b36e-429f-b68a-4982538a8c92",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"9ea94148-d4b6-49b5-b9dd-1dba293a4396\",\"columns\":[{\"UUID\":\"c30adc79-e1c9-46a3-81b5-35b62ebeb19e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:ckCaseComment",
+              "id" : "615c8291-f418-4ff4-9ef2-542549bb47fb",
+              "type" : "component"
+            } ],
+            "id" : "c30adc79-e1c9-46a3-81b5-35b62ebeb19e",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "9ea94148-d4b6-49b5-b9dd-1dba293a4396",
+          "type" : "component"
+        } ],
+        "id" : "209090f0-2370-4757-9705-98702f0aa135",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "CK Portal",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "24aab8a7-4be6-40d5-b399-c71992e5d939",
+          "type" : "component"
+        } ],
+        "id" : "0c72131a-6578-4c93-aa00-12437942e50e",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "892a899e-6805-4f81-b051-ab24e1e454c4",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "I7sD15erG9236GhGgVL615AGLCnRkS",
+    "viewType" : "custom-case-detail"
+  }
+}

@@ -1,0 +1,77 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-08-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-28-2024   Arijit   Initial Version
+-->
+<template>
+    <div>
+      <lightning-input 
+        type="text" 
+        label={contactLabel} 
+        value={userName} 
+        name="userName"
+        required 
+        read-only>
+      </lightning-input>
+      <lightning-input 
+        type="text" 
+        name="subject"
+        label={subjectLabel} 
+        onchange={handleInput}
+        required>
+      </lightning-input>
+      <lightning-input
+        type="text" 
+        name="description"
+        label={descriptionLabel} 
+        onchange={handleInput}
+        required>
+      </lightning-input>
+      <lightning-input
+        type="datetime" 
+        name="dateTime"
+        label={dateTimeLabel} 
+        onchange={handleInput}
+        required>
+      </lightning-input>
+      <lightning-input 
+        type="text" 
+        name="sfq2ProjectLabel"
+        label={sfq2projectLabel} 
+        onchange={handleInput}
+        required>
+      </lightning-input>
+      <lightning-input 
+        type="text" 
+        name="productLabel"
+        label={productLabel} 
+        onchange={handleInput}
+        required>
+      </lightning-input>
+      <lightning-input
+        type="file"
+        label={uploadFileLabel}
+        accept="image/png, .pdf"
+        onchange={handleFilesChange}
+      >
+      </lightning-input>
+      <template if:true={fileData}>
+        <div>
+          File Name: {fileData.filename}
+        </div>
+      </template>
+      <lightning-button 
+        brand="outline" 
+        label="Submit Case" 
+        onclick={handleSubmitCase} 
+        class="slds-align_absolute-center">
+      </lightning-button>
+    </div>
+</template>

@@ -1,0 +1,18 @@
+:host{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: var(--dxp-g-brand-contrast-1);
+}
+
+.hamburger-menu-container {
+    background: rgba(45, 57, 48, 0.3);
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 15;
+}
+
+.hamburger-menu {
+    background: var(--dxp-g-neutral-contrast);
+    min-height: 100%;
+}

@@ -1,0 +1,99 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-08-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-28-2024   Arijit   Initial Version
+-->
+<template>
+  <div style="display:flex;flex-direction:row;align-items:center">
+    <lightning-button-icon 
+      icon-name="utility:back"  
+      variant="brand" 
+      alternative-text="Settings" 
+      title="Settings" 
+      onclick={handleBack}
+      class="slds-var-p-around_small">
+    </lightning-button-icon>
+    <h2>Case Details</h2>
+  </div>
+    <div class="caseBodySec">
+      <lightning-input
+        type="text"
+        label={caseNumberLabel} 
+        value={caseNumber} 
+        read-only
+        >
+      </lightning-input>
+      <lightning-input 
+        type="text" 
+        label={contactLabel}
+        value={caseContactName} 
+        read-only>
+      </lightning-input>
+      <lightning-input 
+        type="text"
+        label={subjectLabel} 
+        value={caseSubject}
+        read-only
+        >
+      </lightning-input>
+      <lightning-input
+        type="text"
+        label={descriptionLabel} 
+        value={caseDescription} 
+        read-only
+        >
+      </lightning-input>
+      <lightning-input
+        type="text"
+        label={casePriorityLabel} 
+        value={casePriority} 
+        read-only
+        >
+      </lightning-input>
+      <lightning-input 
+        type="text"
+        label={sfq2projectLabel} 
+        value={caseProjectName} 
+        read-only
+        >
+      </lightning-input>
+      <lightning-input 
+        type="text"
+        label={productLabel} 
+        value={caseProductName} 
+        read-only
+        >
+      </lightning-input>
+      <lightning-input
+        type="text"
+        label={dateTimeLabel}
+        value={caseOccurredOn}
+        read-only
+      >
+      </lightning-input>
+    </div>
+  <div >
+    <span class="loa">List of Attachment(s)</span>
+    <template lwc:if={listOfFiles}>
+      <ol>
+        <template for:each={listOfFiles} for:item="each">
+          <li key={each.id}>
+            <a href={each.download}>{each.fileName}</a>
+          </li>
+        </template>
+      </ol>
+    </template>
+    <template lwc:else>
+      <div>
+        No file(s) Found
+      </div>
+    </template>
+  </div>
+</template>

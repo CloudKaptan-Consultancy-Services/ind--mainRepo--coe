@@ -1,0 +1,94 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-10-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   04-05-2024   Arijit   Initial Version
+-->
+<template>
+  <div class="slds-align_absolute-center">
+    <div class="slds-var-p-around_large roundedCard slds-form-element__control" style="position:relative">
+      <div
+        class="slds-align_absolute-center slds-var-p-around_x-large slds-text-heading_large"
+        >
+        {formTitle}
+      </div>
+      <lightning-input 
+        required
+        type="text"
+        name="firstName"
+        label={firstNameLabel}
+        pattern="^[a-zA-Z]+$"
+        placeholder={firstNamePlaceholder}
+        onchange={handleInput}
+        message-when-value-missing="Please enter a valid First Name"
+        message-when-pattern-mismatch="Invalid First Name"
+      ></lightning-input>
+      <lightning-input 
+        required
+        type="text"
+        name="lastName"
+        label={lastNameLabel}
+        pattern="^[a-zA-Z]+$"
+        placeholder={lastNamePlaceholder}
+        onchange={handleInput}
+        message-when-value-missing="Please enter a valid Last Name"
+        message-when-pattern-mismatch="Invalid Last Name"
+      ></lightning-input>
+      <lightning-input 
+        required
+        type="text"
+        name="email"
+        label={userNameLabel}
+        placeholder={userNamePlaceholder}
+        onchange={handleInput}
+        message-when-value-missing="Please enter a valid Email"
+      ></lightning-input>
+      <lightning-input
+        required
+        min-length="8"
+        name="password"
+        type="password"
+        label={passwordLabel}
+        placeholder={passwordPlaceholder}
+        onchange={handleInput}
+        onblur={handlePasswordMatch}
+        message-when-value-missing="Please enter a valid Password"
+        message-when-too-short="Minimum 8 characters"
+      ></lightning-input>
+      <lightning-input
+        required
+        min-length="8"
+        name="confirmPassword"
+        type="password"
+        label={confirmPasswordLabel}
+        placeholder={confirmPasswordPlaceholder}
+        onchange={handleInput}
+        onblur={handlePasswordMatch}
+        message-when-value-missing="Please enter a valid Confirm Password"
+        message-when-too-short="Minimum 8 characters"
+      ></lightning-input>
+      <lightning-button
+        name="submit"
+        class="slds-align_absolute-center"
+        label={submitButtonLabel}
+        onclick={handleSubmit}
+      ></lightning-button>
+      <template if:true={showLoader}>
+        <lightning-spinner
+          size="medium"
+          variant="brand"
+          style="background-color: rgba(0, 0, 0, 0.08);"
+          alternative-text="Loading"
+        >
+        </lightning-spinner>
+      </template>
+    </div>
+  </div>
+</template>
+

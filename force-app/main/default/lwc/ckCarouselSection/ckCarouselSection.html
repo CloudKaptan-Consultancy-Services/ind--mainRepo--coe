@@ -1,0 +1,38 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-08-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-27-2024   Arijit   Initial Version
+-->
+<template>
+        
+    <lightning-carousel scroll-duration="6">
+        <template if:true={contentId1}>
+            <c-ck-carousel-item
+                content-id={contentId1}
+            ></c-ck-carousel-item>
+        </template>
+        <template if:true={contentId2}>
+            <c-ck-carousel-item
+                content-id={contentId2}
+            ></c-ck-carousel-item>
+        </template>
+        <template if:true={contentId3}>
+            <c-ck-carousel-item
+                content-id={contentId3}
+            ></c-ck-carousel-item>
+        </template>
+        <template if:true={contentId4}>
+            <c-ck-carousel-item
+                content-id={contentId4}
+            ></c-ck-carousel-item>
+        </template>
+    </lightning-carousel>
+        
+</template>

@@ -1,0 +1,144 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "CK Portal",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "2rem",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"72618436-68ce-4cbd-badc-4a10050809d8\",\"columns\":[{\"UUID\":\"242de187-a940-4e02-af36-b86e5e0b44ea\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "contentId1" : "MCLB5QL74THRDYLJN2PLPZNLRTIM",
+                "contentId2" : "MC77H4XGOPEJDJFEPK7AWAE4L2HQ",
+                "contentId3" : "MCSLCCTISCEZG4RNTHEETOQPBKYA",
+                "contentId4" : "MCXN4SMOXH6BHJVFFIQ4SWYIG6VI",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "0px",
+                    "left" : "0px",
+                    "right" : "0px",
+                    "top" : "0px"
+                  }
+                }
+              },
+              "definition" : "c:ckCarouselSection",
+              "id" : "f0052da5-ea83-4703-acf4-b41ad9bdb315",
+              "type" : "component"
+            } ],
+            "id" : "242de187-a940-4e02-af36-b86e5e0b44ea",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "72618436-68ce-4cbd-badc-4a10050809d8",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "0rem",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "4rem",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "0rem",
+            "sectionConfig" : "{\"UUID\":\"17e2219e-13cb-403f-af53-c3165b0fe2b0\",\"columns\":[{\"UUID\":\"348671be-ec6c-48bf-8eb4-0948625eaf90\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"6a1811e2-a818-4a97-86ef-9807af54594d\",\"columnName\":\"Column 2\",\"columnKey\":\"a5e88\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "caseNumberLabel" : "Case Number",
+                "casePriorityLabel" : "Case Priority",
+                "caseStatus" : "Case Status",
+                "contactLabel" : "Contact Name",
+                "dateTimeLabel" : "Date & Time Issue Occured",
+                "productLabel" : "Product",
+                "sfq2projectLabel" : "Salesforce Project name",
+                "subjectLabel" : "Subject"
+              },
+              "definition" : "c:ckCaseStatus",
+              "id" : "7cd7124d-e649-47d6-aeb1-111d1c714644",
+              "type" : "component"
+            } ],
+            "id" : "348671be-ec6c-48bf-8eb4-0948625eaf90",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "createCaseBtnLabel" : "Create Case",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "3rem",
+                    "left" : "",
+                    "right" : "",
+                    "top" : "3rem"
+                  }
+                }
+              },
+              "definition" : "c:ckCreateCase",
+              "id" : "c239e5a1-bbd6-46bd-8d0e-d457e6d5cab5",
+              "type" : "component"
+            } ],
+            "id" : "6a1811e2-a818-4a97-86ef-9807af54594d",
+            "name" : "a5e88",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "17e2219e-13cb-403f-af53-c3165b0fe2b0",
+          "type" : "component"
+        } ],
+        "id" : "2c9d107e-4c2f-4757-8b85-946418873e1a",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "CK Portal",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "ee324188-a31a-44eb-b7ed-08bf79424db1",
+          "type" : "component"
+        } ],
+        "id" : "3f94a417-11b8-4e71-be3f-becdaf89f4e2",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "cdf276fa-1506-4a4c-b2f9-117b8740c2f8",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "I7sD15erG9236GhGgVL615AGLCnRkS",
+    "viewType" : "home"
+  }
+}

@@ -1,0 +1,42 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-08-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-27-2024   Arijit   Initial Version
+-->
+<template>
+  <lightning-tabset>
+    <lightning-tab label="All Cases" value="all" onactive={handleFilterData}>
+    </lightning-tab>
+    <lightning-tab label="Open Cases" value="open" onactive={handleFilterData}>
+    </lightning-tab>
+    <lightning-tab label="Closed Cases" value="closed" onactive={handleFilterData}>
+    </lightning-tab>
+</lightning-tabset>
+  <div style="display:flex;flex-direction:column;min-height:10rem">
+      <lightning-datatable
+        key-field="id"
+        data={filteredData}
+        columns={columns}
+        onrowaction={handleClick}
+        default-sort-direction={defaultSortDirection}
+        sorted-direction={sortDirection}
+        sorted-by={sortedBy}
+        onsort={onHandleSort}
+        hide-checkbox-column
+        show-row-number-column
+      >
+      </lightning-datatable>
+      <template if:true={noData}>
+        <div class="slds-align_absolute-center">
+          No Case(s) Found!
+        </div>
+      </template>
+  </div>
+</template>

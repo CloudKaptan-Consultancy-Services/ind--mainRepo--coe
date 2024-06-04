@@ -1,0 +1,6 @@
+{
+  "apiName" : "Case_Detail__c",
+  "type" : "sfdc_cms__route",
+  "parentId" : "sfdc_cms__route/Case__c",
+  "path" : "routes"
+}

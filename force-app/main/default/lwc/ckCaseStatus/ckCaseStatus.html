@@ -1,0 +1,40 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-09-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   03-27-2024   Arijit   Initial Version
+-->
+<template>
+    <div style="height:auto; min-height: 25rem; display:flex;flex-direction:column;">
+      <div style="font-size: 2rem;text-decoration: underline; padding-bottom: 2rem;">
+        My Cases
+      </div>
+      <lightning-datatable
+        key-field="id"
+        data={caseData}
+        columns={columns}
+        onrowaction={handleClick}
+        hide-checkbox-column
+      >
+      </lightning-datatable>
+      <template if:true={noData}>
+        <div class="slds-align_absolute-center">
+          No Case(s) Found!
+        </div>
+      </template>
+    <template if:true={showMoreCases}>
+      <lightning-button
+        class="slds-align_absolute-center slds-var-m-around_x-small"
+        variant="brand"
+        label="Show More" 
+        onclick={handleShowMoreCases}>
+      </lightning-button>
+    </template>
+  </div>
+</template>

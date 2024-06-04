@@ -1,0 +1,10 @@
+:host {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.footerBg {
+    background-color: var(--dxp-g-brand-contrast-1);
+}

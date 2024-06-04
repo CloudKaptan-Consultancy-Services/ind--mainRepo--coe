@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Self Registration Form</masterLabel>
+    <description>Self Registration Form for Community Users</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="formTitle"
+                type="String"
+                default="Sign Up"
+                label="Sign Up Form Title"
+                description="The title shown for the Sign Up form."
+            />
+            <property
+                name="firstNameLabel"
+                type="String"
+                default="First Name"
+                label="First Name Label"
+                description="The label for the field where a user enters a First Name."
+            />
+            <property
+                name="firstNamePlaceholder"
+                type="String"
+                default="Your First Name"
+                label="First Name Input Placeholder"
+                description="The placeholder for the field where a user enters a First Name."
+            />
+            <property
+                name="lastNameLabel"
+                type="String"
+                default="Last Name"
+                label="Last Name Label"
+                description="The label for the field where a user enters a Last Name."
+            />
+            <property
+                name="lastNamePlaceholder"
+                type="String"
+                default="Your Last Name"
+                label="Last Name Input Placeholder"
+                description="The placeholder for the field where a user enters a Last Name."
+            />
+            <property
+                name="userNameLabel"
+                type="String"
+                default="Username"
+                label="Username Label"
+                description="The label for the field where a user enters a username in the form of an email address."
+            />
+            <property
+                name="userNamePlaceholder"
+                type="String"
+                default="Your Username"
+                label="Username Input Placeholder"
+                description="The placeholder for the field where a user enters a username in the form of an email address."
+            />
+            <property
+                name="passwordLabel"
+                type="String"
+                default="Password"
+                label="Password Label"
+                description="The label for the field where the users enter a password."
+            />
+            <property
+                name="passwordPlaceholder"
+                type="String"
+                default="Your Password"
+                label="Password Input Placeholder"
+                description="The placeholder for the field where the users enter a password."
+            />
+            <property
+                name="confirmPasswordLabel"
+                type="String"
+                default="Confirm Password"
+                label="Confirm Password Label"
+                description="The label for the field where the users enter the confirm password."
+            />
+            <property
+                name="confirmPasswordPlaceholder"
+                type="String"
+                default="Your Confirm Password"
+                label="Confirm Password Input Placeholder"
+                description="The placeholder for the field where the users enter the confirm password."
+            />
+            <property
+                name="submitButtonLabel"
+                type="String"
+                default="Submit"
+                label="Submit Button Label"
+                description="The label for the button the user clicks to submit the login request."
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

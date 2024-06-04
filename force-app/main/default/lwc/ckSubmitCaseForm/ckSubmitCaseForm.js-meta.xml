@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="contactLabel"
+                type="String"
+                default="Contact Name"
+                label="Contact Name Label"
+                description="Contact Name Label"
+            />
+            <property
+                name="subjectLabel"
+                type="String"
+                default="Subject"
+                label="Subject Label"
+                description="Subject Label"
+            />
+            <property
+                name="descriptionLabel"
+                type="String"
+                default="Description"
+                label="Description Label"
+                description="Description Label"
+            />
+            <property
+                name="caseTypeLabel"
+                type="String"
+                default="Case Type"
+                label="Case Type Label"
+                description="Case Type Label"
+            />
+            <property
+                name="dateTimeLabel"
+                type="String"
+                default="Date &amp; Time Issue Occured"
+                label="Issue Date/Time Label"
+                description="Issue Date/Time Label"
+            />
+            <property
+                name="sfq2projectLabel"
+                type="String"
+                default="Salesforce / Q2 Project name"
+                label="Salesforce / Q2 Project name Label"
+                description="Salesforce / Q2 Project name Label"
+            />
+            <property
+                name="productLabel"
+                type="String"
+                default="Product"
+                label="Product Label"
+                description="Product Label"
+            />
+            <property
+                name="uploadFileLabel"
+                type="String"
+                default="Upload File"
+                label="Upload File Label"
+                description="Upload File Label"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

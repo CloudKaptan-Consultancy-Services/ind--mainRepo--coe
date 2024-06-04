@@ -1,0 +1,52 @@
+<!--
+  @Company           : Cloudkaptan Consultancy Services Pvt. Ltd.
+  @description       : This is used to
+  @author            : Arijit
+  @group             : 
+  @testclass         : 
+  @last modified on  : 04-08-2024
+  @last modified by  : Arijit Naskar
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   04-07-2024   Arijit   Initial Version
+-->
+<template>
+    <span style="font-size: 1.5rem;text-decoration: underline;">Case Comment(s)</span>
+    <div>
+      <lightning-textarea 
+        name="inputComment" 
+        onchange={handleCommentInput}
+        placeholder="Please type your Comment here...">
+      </lightning-textarea>
+      <div class="slds-align_absolute-center">
+        <lightning-button 
+          brand="outline" 
+          label="Post" 
+          onclick={submitComment} 
+          disabled={disablePost}
+      >
+      </lightning-button>
+      </div>
+    <template lwc:if={listOfComments}>
+      <ol>
+        <template for:each={listOfComments} for:item="each">
+          <li key={each.id}>
+            <div style="border-bottom:solid;margin-bottom:1rem">
+            <p><span style="font-weight:bold">Created By:</span> {each.commentedBy} <span style="font-weight:bold">({each.dateValue})</span></p>
+            <lightning-textarea
+              value={each.comment}
+              read-only
+            > 
+            </lightning-textarea>
+            </div>
+          </li>
+        </template>
+      </ol>
+    </template>
+    <template lwc:else>
+      <div>
+        No Comment(s) Found
+      </div>
+    </template>
+  </div>
+</template>

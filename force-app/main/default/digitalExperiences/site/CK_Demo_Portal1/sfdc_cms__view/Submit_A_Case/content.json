@@ -1,0 +1,78 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "CK Portal",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "4rem",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"59def24a-60a7-45ca-8269-779b441b49cf\",\"columns\":[{\"UUID\":\"6c0fcf44-f7bf-4a7e-a66a-d7f91033d608\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "caseTypeLabel" : "Case Type",
+                "contactLabel" : "Contact Name",
+                "dateTimeLabel" : "Date & Time Issue Occured",
+                "descriptionLabel" : "Description",
+                "productLabel" : "Product Name",
+                "sfq2projectLabel" : "Salesforce Project Name",
+                "subjectLabel" : "Subject",
+                "uploadFileLabel" : "Upload File"
+              },
+              "definition" : "c:ckSubmitCaseForm",
+              "id" : "545f7a9e-da0e-4c6d-a32d-d979f00302ae",
+              "type" : "component"
+            } ],
+            "id" : "6c0fcf44-f7bf-4a7e-a66a-d7f91033d608",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "59def24a-60a7-45ca-8269-779b441b49cf",
+          "type" : "component"
+        } ],
+        "id" : "d86d3546-ad34-4d95-87ef-e17a327525ad",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "CK Portal",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "b5172244-469a-4d17-8487-8930c79f934c",
+          "type" : "component"
+        } ],
+        "id" : "dcf94672-b530-40e4-9969-c44b2409956a",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "567f771b-8546-4874-bc97-23a5dd008031",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "I7sD15erG9236GhGgVL615AGLCnRkS",
+    "viewType" : "custom-submit-a-case"
+  }
+}
